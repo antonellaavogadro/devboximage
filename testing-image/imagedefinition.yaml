@@ -1,0 +1,97 @@
+$schema: "1.0"
+name: "HostOps"
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
+
+tasks:
+  - name: ~/winget
+    parameters:
+      downloadUrl: 'https://raw.githubusercontent.com/contoso-co/common-eng-sys/main/dsc-configurations/common-config.dsc.yaml'
+  
+  - name: ~/winget
+    parameters:
+      package: Microsoft.WSL
+  
+  - name: ~/winget
+    parameters:
+      package: Microsoft.VisualStudioCode
+ 
+  - name: ~/winget
+    parameters:
+      package: Microsoft.WindowsTerminal
+
+  - name: choco
+    parameters:
+      package: openssh
+
+  - name: ~/winget
+    parameters:
+      package: Amazon.AWSCLI
+
+  - name: ~/winget
+    parameters:
+      package: Microsoft.AzureCLI
+
+  - name: ~/winget
+    parameters:
+      package: eksctl.eksctl
+
+  - name: ~/winget
+    parameters:
+      package: 7zip.7zip
+
+  - name: ~/winget
+    parameters:
+      package: Mozilla.Firefox
+
+  - name: ~/winget
+    parameters:
+      package: Microsoft.PowerBI
+    
+  - name: ~/winget
+    parameters:
+      package: Microsoft.Azure.StorageExplorer
+
+  - name: ~/winget
+    parameters:
+      package: Microsoft.PowerToys
+
+  - name: ~/winget
+    parameters:
+      package: Chocolatey.Chocolatey
+
+  - name: ~/winget
+    parameters:
+      package: Chocolatey.ChocolateyGUI
+
+  - name: ~/winget
+    parameters:
+      package: Microsoft.SQLServerManagementStudio
+
+  - name: ~/winget
+    parameters:
+      package: Notepad++.Notepad++
+
+  - name: choco
+    parameters:
+      package: packer
+
+  - name: choco
+    parameters:
+      package: terraform
+
+  - name: choco
+    parameters:
+      package: kubernetes-cli
+
+  - name: choco
+    parameters:
+      package: python313
+  
+  - name: choco
+    parameters:
+      package: azure-functions-core-tools
+      switches: /x64
+
+  - name: choco
+    parameters:
+      package: vmware-powercli-psmodule
